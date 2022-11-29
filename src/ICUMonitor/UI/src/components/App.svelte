@@ -26,8 +26,9 @@
             <div class="icu-overview">
                 <TemperatureMap icu={ icu } />
                 <div class="temperature-value" style={temperatureCssFilter(icu, 'temp-avg')}>{ Math.round(lastReading(icu, 'temp-avg')) }</div>
-                <div class="humidity-value">{ Math.round(lastReading(icu, 'humidity')) }</div>
-                <TemperatureGraph readings={ readings(icu, 'temp-avg') } />
+                <div class="hr-value">156</div>
+                <div class="spo2-value">97</div>
+                <div class="rr-value">116</div>
             </div>
 
             <h2>Incubator Temperature</h2>
@@ -52,12 +53,12 @@
         align-items: stretch;
     }
 
-    .temperature-value, .humidity-value {
+    .temperature-value, .humidity-value, .hr-value, .spo2-value, .rr-value {
         min-width: 2rem;
         position: relative;
     }
 
-    .temperature-value, .humidity-value {
+    .temperature-value, .humidity-value, .hr-value, .spo2-value, .rr-value {
         width: 6rem;
         height: 6rem;
         flex-grow: 0;
@@ -74,7 +75,7 @@
         top: -0.3rem;
     }
 
-    .temperature-value::before, .humidity-value::before {
+    .temperature-value::before, .humidity-value::before, .hr-value::before, .spo2-value::before, .rr-value::before {
         position: absolute;
         font-size: 0.8rem;
         left: 0; right: 0;
@@ -85,7 +86,7 @@
     }
 
     .temperature-value::before {
-        content: 'avg temp';
+        content: 'avg Temp';
     }
 
     .humidity-value::before {
@@ -99,6 +100,18 @@
         top: -0.3rem;
     }
 
+    .hr-value::before {
+        content: 'avg HR';
+    }
+
+    .spo2-value::before {
+        content: 'avg SpO₂';
+    }
+
+    .rr-value::before {
+        content: 'avg RR';
+    }
+
     .temperature-value {
         background-color: green;
     }
@@ -106,4 +119,16 @@
     .humidity-value {
         background-color: #666;
     }
+
+    .hr-value {
+        background-color: #444;
+    }
+
+    .spo2-value {
+        background-color: #555;
+    }
+
+    .rr-value {
+        background-color: #666;
+    } 
 </style>
