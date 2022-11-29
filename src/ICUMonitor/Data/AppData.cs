@@ -20,11 +20,11 @@ public class AppData
         result.AddSensor(CreateSampleSensorTemperature("temp-point-1"));
         result.AddSensor(CreateSampleSensorTemperature("temp-point-2"));
         result.AddSensor(CreateSampleSensorTemperature("temp-point-3"));
-        result.AddSensor(CreateSampleSensorMoisture("moisture-plant-0", "Incubator 1", "Felix Hoyer"));
-        result.AddSensor(CreateSampleSensorMoisture("moisture-plant-1", "Incubator 2", "Vitor Vidal"));
-        result.AddSensor(CreateSampleSensorMoisture("moisture-plant-2", "Incubator 3", "Aurora Vidal"));
-        result.AddSensor(CreateSampleSensorMoisture("moisture-plant-3", "Incubator 4", "June Huger"));
-        result.AddSensor(CreateSampleSensorMoisture("moisture-plant-4", "Incubator 5", "Jewel Huger"));
+        result.AddSensor(CreateSampleSensorMoisture("moisture-plant-0", "Incubator 1", "Alice"));
+        result.AddSensor(CreateSampleSensorMoisture("moisture-plant-1", "Incubator 2", "Bob"));
+        result.AddSensor(CreateSampleSensorMoisture("moisture-plant-2", "Incubator 3", "Carol"));
+        result.AddSensor(CreateSampleSensorMoisture("moisture-plant-3", "Incubator 4", "David"));
+        result.AddSensor(CreateSampleSensorMoisture("moisture-plant-4", "Incubator 5", "Eve"));
         return result;
     }
 
