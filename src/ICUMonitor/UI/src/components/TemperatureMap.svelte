@@ -5,7 +5,7 @@
 </script>
 
 <div class="temperature-map">
-    <img alt="Newborn (credits: Fiona Yaron-Field)" src="temperature-map/icu.jpg" style="height: 150px;">
+    <img alt="Thermometer (credits: Edgar Soto)" src="temperature-map/icu.jpg" style="height: 145px;">
 </div>
 
 <style>

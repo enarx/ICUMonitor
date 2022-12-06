@@ -59,25 +59,25 @@
     }
 
     .temperature-value, .humidity-value, .hr-value, .spo2-value, .rr-value {
-        width: 6rem;
-        height: 6rem;
+        width: 9rem;
+        height: 9rem;
         flex-grow: 0;
         line-height: 5rem;
         text-align: center;
-        font-size: 1.7rem;
+        font-size: 3rem;
         color: white;
     }
 
     .temperature-value::after {
-        content: '°C';
+        content: '°F';
         position: absolute;
-        font-size: 0.9rem;
+        font-size: 1.5rem;
         top: -0.3rem;
     }
 
     .temperature-value::before, .humidity-value::before, .hr-value::before, .spo2-value::before, .rr-value::before {
         position: absolute;
-        font-size: 0.8rem;
+        font-size: 1.5rem;
         left: 0; right: 0;
         bottom: 1rem;
         height: 1rem;

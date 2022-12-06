@@ -75,8 +75,8 @@ public class AppData
     public static double GetSimulatedTemperatureReading(int sensorIndex, DateTime timestamp)
     {
         const int WAVELENGTH_HOURS = 6;
-        const double RESULT_MIN = 27;
-        const double RESULT_MAX = 30;
+        const double RESULT_MIN = 97;
+        const double RESULT_MAX = 102;
         var secondsToday = timestamp.Ticks / 10_000_000d; // Convert to seconds
         var x = (secondsToday + 15*60*(sensorIndex % 5)) / (WAVELENGTH_HOURS*60*60); // Convert to number of wavelengths
         var y = Math.Sin(x * 2 * Math.PI);
@@ -104,8 +104,8 @@ public class AppData
     public static double GetSimulatedMoistureReading(int sensorIndex, DateTime timestamp)
     {
         const double WAVELENGTH_HOURS = 2.5;
-        const double RESULT_MIN = 27;
-        const double RESULT_MAX = 30;
+        const double RESULT_MIN = 97;
+        const double RESULT_MAX = 102;
         var secondsToday = timestamp.Ticks / 10_000_000d; // Convert to seconds
         var x = 2 * Math.PI * (secondsToday + 160 * (sensorIndex % 60)) / (WAVELENGTH_HOURS * 60 * 60); // Convert to number of rotations
         var y = 2d;

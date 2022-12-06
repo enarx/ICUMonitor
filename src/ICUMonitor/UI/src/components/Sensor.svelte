@@ -11,7 +11,7 @@
         <div class="sensor-name-text">{sensor.displayName}</div>
     </div>
     <SensorGraph readings={sensor.readings} />
-    <div class="sensor-value">{ Math.round(lastReading(icu, sensor.sensorId)) }°C</div>
+    <div class="sensor-value">{ Math.round(lastReading(icu, sensor.sensorId)) }°F</div>
     <div class="sensor-options"></div>
 </div>
 
