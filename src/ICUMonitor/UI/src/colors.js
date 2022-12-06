@@ -11,8 +11,8 @@ const colorMap = [
 ];
 
 function temperatureRating(temp) {
-    const min = 96;
-    const max = 103;
+    const min = 72;
+    const max = 76;
     return Math.max(0, Math.min(1, (temp - min) / (max - min)));
 }
 
@@ -34,8 +34,8 @@ export function temperatureCssFilter(icu, sensorId) {
 }
 
 export function moistureColor(percent) {
-    const min = 96;
-    const max = 103;
+    const min = 72;
+    const max = 76;
     const prop = Math.max(0, Math.min(1, (percent - min) / (max - min)));
     const index = Math.round(prop*(colorMap.length - 1));
     return colorMap[index];
