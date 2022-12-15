@@ -69,7 +69,7 @@
     }
 
     .temperature-value::after {
-        content: '°F';
+        content: '°C';
         position: absolute;
         font-size: 1.5rem;
         top: -0.3rem;
